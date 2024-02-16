@@ -1,0 +1,7 @@
+Firstly:
+download all the packages required
+create a virtual enviraonemt
+open anaconda prompt
+activate the environment: conda activate pcos
+run jupyter lab: jupyter-lab
+Launch terminal: python pcos.py

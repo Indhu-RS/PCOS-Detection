@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+    <style>
+        body {
+            background-color: #ffe6e6; /* light pinkish background */
+            font-family: Arial, sans-serif;
+            color: #8b0000; /* dark pink font color */
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #8b0000; /* dark pink border */
+            border-radius: 5px;
+            background-color: white;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: 2px solid #8b0000; /* dark pink border */
+            border-radius: 5px;
+            background-color: #ffcccc; /* light pinkish background */
+            color: #8b0000; /* dark pink font color */
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ffc0cb; /* lighter pink on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Generate">
+    </form>
+</body>
+</html>

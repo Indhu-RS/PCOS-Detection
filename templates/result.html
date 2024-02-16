@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            background-color: #ffe6e6; /* light pinkish background */
+            font-family: Arial, sans-serif;
+            color: #8b0000; /* dark pink font color */
+            text-align: center;
+        }
+        h1, h2 {
+            margin-top: 20px;
+        }
+        .result-image {
+            max-width: 80%;
+            margin: 0 auto;
+            border: 2px solid #8b0000; /* dark pink border */
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #ffcccc; /* light pinkish background */
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <img class="result-image" src="{{ image_file }}" alt="Uploaded Image">
+    <h2>{{ class_label }}</h2>
+</body>
+</html>
